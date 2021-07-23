@@ -17,11 +17,11 @@ class Homepage extends Component {
   getProductDetails = () => {
     //error boundary can be implemented here
     api
-      .getData("/products")
+      .getData("/products/list")
       .then((response) => {
         console.log("response", response);
-        this.setState({ productList: response.data.results });
-        this.setState({ originalProductList: response.data.results });
+        this.setState({ productList: response.data.results[0].products });
+        this.setState({ originalProductList: response.data.results[0] });
       })
       .catch((error) => {
         console.log(error);
