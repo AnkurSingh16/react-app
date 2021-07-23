@@ -1,0 +1,7 @@
+.counter {
+  color: white;
+}
+
+.counter:hover {
+  color: red;
+}

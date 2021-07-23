@@ -1,0 +1,44 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: peru;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  color: orange;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.submit-button {
+  padding: 12px;
+}
+
+.submit-section {
+  margin-top: 30px;
+}
+
+.success {
+  padding: 30px;
+  background-color: green;
+  color: white;
+}
+
+.error {
+  padding: 30px;
+  background-color: red;
+  color: white;
+}
