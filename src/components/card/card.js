@@ -5,7 +5,7 @@ import "./card-styles.css";
 export const Card = ({ product }) => {
   const [isAdded, setIsAdded] = useState(false);
   const dispatch = useContext(CartDispatchContext);
-  const productItem = product.basket.products[0];
+  const productItem = product;
 
   const handleAddToCart = () => {
     const product = { ...productItem, quantity: 1 };
